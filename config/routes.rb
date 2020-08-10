@@ -8,4 +8,8 @@ Rails.application.routes.draw do
   resources :events do
     resources :tickets
   end
+
+  # defaults: { format: 'json' } をつけることによって、/status へアクセスした時に、
+  # /status.json へアクセスした時と同じようにJSONを返すようになる
+  get "status" => "status#index", defaults: { format: 'json' }
 end
