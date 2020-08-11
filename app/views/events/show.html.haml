@@ -2,6 +2,8 @@
 .row
   .col-8
     .card.mb-2
+      - if @event.image.attached?
+        = image_tag @event.image, class: "card-img-top"
       %h5.card-header イベント内容
       .card-body
         %p.card-text= @event.content
@@ -24,6 +26,7 @@
         - else
           退会したユーザです
   .col-4
+    - binding.irb
     - if @event.created_by?(current_user)
       = link_to "イベントを編集する", edit_event_path(@event), class: "btn btn-info btn-lg btn-block"
       = link_to "イベントを削除する", event_path(@event), class: "btn btn-danger btn-lg btn-block", method: :delete, data: { confirm: "本当に削除しますか？" }

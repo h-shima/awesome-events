@@ -31,6 +31,7 @@ module AwesomeEvents
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
 
+    config.active_storage.variant_processor = :vips
     config.factory_bot.definition_file_paths = ["test/factories"]
   end
 end
