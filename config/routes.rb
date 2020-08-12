@@ -12,4 +12,6 @@ Rails.application.routes.draw do
   # defaults: { format: 'json' } をつけることによって、/status へアクセスした時に、
   # /status.json へアクセスした時と同じようにJSONを返すようになる
   get "status" => "status#index", defaults: { format: 'json' }
+
+  match "*path" => "application#error404", via: :all
 end
