@@ -20,8 +20,8 @@ gem 'jbuilder', '~> 2.7'
 # Template Engine
 gem 'hamlit-rails', '~> 0.2.3'
 # 認証
-gem 'omniauth', '~> 1.9.1'
-gem 'omniauth-github', '~> 1.4.0'
+gem 'omniauth', '~> 2.0.1'
+gem 'omniauth-github', '~> 2.0.0'
 gem 'omniauth-rails_csrf_protection', '~> 0.1.2'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
