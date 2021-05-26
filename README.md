@@ -1,24 +1,4 @@
-# README
+パーフェクトRuby on Rails [増補改訂版]の写経レポジトリです
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+書籍のリンク
+https://gihyo.jp/book/2020/978-4-297-11462-6
